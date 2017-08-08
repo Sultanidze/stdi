@@ -1,0 +1,50 @@
+.insList_auto{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0;
+}
+.insList_auto li{
+    margin-right: 40px;
+    display: block;
+    max-width: 140px;
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+.insList_auto li:last-child{
+    margin-right: 0;
+}
+.insList_auto li img{
+    max-height: 58px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.insList_auto li a{
+    display: block;
+    clear: both;
+}
+
+.calcs__list{
+    list-style: none;
+    padding: 0;
+}
+.calcs__list li{
+    float: left;
+    min-height: 56px;
+    padding-left: 60px;
+}
+.calcs__list li:before{
+    content: '';
+    width: 46px;
+    height: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/app/web/images/calculator.png);
+}
+.calcs__list a{
+    display: inline-block;
+    max-width: 138px;
+}

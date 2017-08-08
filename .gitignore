@@ -1,0 +1,7 @@
+bitrix/*
+!bitrix/templates/
+bitrix/templates/stdi/css/*
+!bitrix/templates/stdi/css/custom.css
+bitrix/templates/stdi/img/
+bitrix/templates/stdi/js/*
+!bitrix/templates/stdi/js/custom.js
