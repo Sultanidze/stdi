@@ -6,15 +6,15 @@ $(document).on("ready", function(){
         ,$mobMenuScroll = $('.mp-level.mobile').children("ul")
         ;
 
-    console.log("dsf");
-    console.log($mobMenuScroll);
+    // console.log("dsf");
+    // console.log($mobMenuScroll);
 
         $descMenuScroll.perfectScrollbar();
         $mobMenuScroll.perfectScrollbar();
-    if ($body.hasClass("full")){
-    };
+    // if ($body.hasClass("full")){
+    // };
 
-    if ($body.hasClass("mobile")){
-    };
+    // if ($body.hasClass("mobile")){
+    // };
 
 });

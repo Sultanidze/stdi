@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="/bitrix/js/main/core/css/core.css?14992718803963" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        if (!window.BX) window.BX = {
+            message: function(mess) {
+                if (typeof mess == 'object')
+                    for (var i in mess) BX.message[i] = mess[i];
+                return true;
+            }
+        };
+
+    </script>
+    <script type="text/javascript">
+        (window.BX || top.BX).message({
+            'JS_CORE_LOADING': 'Загрузка...',
+            'JS_CORE_NO_DATA': '- Нет данных -',
+            'JS_CORE_WINDOW_CLOSE': 'Закрыть',
+            'JS_CORE_WINDOW_EXPAND': 'Развернуть',
+            'JS_CORE_WINDOW_NARROW': 'Свернуть в окно',
+            'JS_CORE_WINDOW_SAVE': 'Сохранить',
+            'JS_CORE_WINDOW_CANCEL': 'Отменить',
+            'JS_CORE_WINDOW_CONTINUE': 'Продолжить',
+            'JS_CORE_H': 'ч',
+            'JS_CORE_M': 'м',
+            'JS_CORE_S': 'с',
+            'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние',
+            'JSADM_AI_ALL_NOTIF': 'Показать все',
+            'JSADM_AUTH_REQ': 'Требуется авторизация!',
+            'JS_CORE_WINDOW_AUTH': 'Войти',
+            'JS_CORE_IMAGE_FULL': 'Полный размер'
+        });
+
+    </script>
+    <script type="text/javascript">
+        (window.BX || top.BX).message({
+            'LANGUAGE_ID': 'ru',
+            'FORMAT_DATE': 'DD.MM.YYYY',
+            'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+            'COOKIE_PREFIX': 'BITRIX_SM',
+            'SERVER_TZ_OFFSET': '10800',
+            'SITE_ID': 's1',
+            'SITE_DIR': '/',
+            'USER_ID': '',
+            'SERVER_TIME': '1500387904',
+            'USER_TZ_OFFSET': '0',
+            'USER_TZ_AUTO': 'Y',
+            'bitrix_sessid': '45a8b304490a20483a4af0f1e75c436a'
+        });
+
+    </script>
+
+
+    <script type="text/javascript" src="/bitrix/js/main/core/core.js?1499271879112395"></script>
+    <script type="text/javascript" src="/bitrix/js/main/core/core_ajax.js?149927188035454"></script>
+    <script type="text/javascript">
+        (function() {
+            "use strict";
+
+            var counter = function() {
+                var cookie = (function(name) {
+                    var parts = ("; " + document.cookie).split("; " + name + "=");
+                    if (parts.length == 2) {
+                        try {
+                            return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));
+                        } catch (e) {}
+                    }
+                })("BITRIX_CONVERSION_CONTEXT_s1");
+
+                if (!cookie || cookie.EXPIRE < BX.message("SERVER_TIME")) {
+                    var request = new XMLHttpRequest();
+                    request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+                    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                    request.send(
+                        "SITE_ID=" + encodeURIComponent(BX.message("SITE_ID")) + "&" +
+                        "sessid=" + encodeURIComponent(BX.bitrix_sessid()) + "&" +
+                        "HTTP_REFERER=" + encodeURIComponent(document.referrer)
+                    );
+                }
+            };
+
+            if (window.frameRequestStart === true)
+                BX.addCustomEvent("onFrameDataReceived", counter);
+            else
+                BX.ready(counter);
+        })();
+
+    </script>
+
+    <link rel="stylesheet" href="/bitrix/templates/stdi/css/app-b31b02b8ad.css">
+
+    <script>
+        PAGE_LANG = 'ru';
+
+    </script>
+
+    <!-- Google Tag Manager -->
+<!--
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5Z95LBJ');
+
+    </script>
+-->
+    <!-- End Google Tag Manager -->
+
+    <script async src="https://callback.telecontact.ru/static/load.js"></script>
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="Is86oFQtqgTPsd0li82G2NO7SbECHCuzKkTE-s1bC57FLuDDtZNEWqIXXO9S8kiCgHDrvqI3xAc-DvdcXzYZnQ==">
+    <title></title>
+    <meta name="robots" content="NOINDEX, FOLLOW">
+</head>
+
+<body>
+
+
+    <div class="main-container">
+
+        <nav id="menu" class="mp-menu">
+            <div class="mp-level no-mobile">
+                <div class="right-shadow"></div>
+                <h2>
+                    &nbsp;
+                    <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                </h2>
+                <ul>
+
+                    <li>
+                        <a href="#">Физическим лицам<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                        <div class="mp-level">
+                            <a href="/ru/strahovanie/">
+                                <h2>
+                                    Физическим лицам <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                </h2>
+                            </a>
+                            <ul>
+
+
+
+
+                                <li>
+                                    <a href="#">Страхование путешествий<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                                    <div class="mp-level">
+                                        <a href="/ru/strahovanie/puteshestvij/">
+                                            <h2>
+                                                Страхование путешествий <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                            </h2>
+                                        </a>
+                                        <ul>
+
+
+
+
+                                            <li><a href="/ru/strahovanie/turisticheskoe/">Туристическое страхование</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/dlja-shengenskoj-vizy/">Страхование длч шенгенской визы</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Страхование недвижимости<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                                    <div class="mp-level">
+                                        <a href="/ru/strahovanie/nedvizhimosti/">
+                                            <h2>
+                                                Страхование недвижимости <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                            </h2>
+                                        </a>
+                                        <ul>
+
+
+
+
+                                            <li><a href="/ru/strahovanie/remonta/">Страхование ремонта</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/kvartiry/">Страхование квартиры</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/doma/">Страхование дома</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/zemli">Страхование земли</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Автострахование<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                                    <div class="mp-level">
+                                        <a href="/ru/strahovanie/avto/">
+                                            <h2>
+                                                Автострахование <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                            </h2>
+                                        </a>
+                                        <ul>
+
+
+
+
+                                            <li><a href="/ru/strahovanie/ogpo/">ОГПО</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/kasko/">КАСКО</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/spectehniki/">Страхование спецтехники</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Страхование здоровья<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                                    <div class="mp-level">
+                                        <a href="/ru/strahovanie/zdorovja/">
+                                            <h2>
+                                                Страхование здоровья <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                            </h2>
+                                        </a>
+                                        <ul>
+
+
+
+
+                                            <li><a href="/ru/strahovanie/detej/">Страхование для детей</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Юридическим лицам<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                        <div class="mp-level">
+                            <a href="/ru/strahovanie/">
+                                <h2>
+                                    Юридическим лицам <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                </h2>
+                            </a>
+                            <ul>
+
+
+
+
+                                <li><a href="/ru/strahovanie/objazatelnoe/">Обязятельное страхование</a></li>
+
+
+
+                                <li><a href="/ru/strahovanie/rabotnikov/">Страхование работников</a></li>
+
+
+
+                                <li><a href="/ru/strahovanie/otvetstvennosti/">Страхование ответственности</a></li>
+
+
+
+                                <li><a href="/ru/strahovanie/imushhestva/">Страхование имущества</a></li>
+
+
+
+                                <li><a href="/ru/strahovanie/kargo/">Карго</a></li>
+
+
+
+                                <li><a href="http://1076829.forcecrm.web.hosting-test.net/ru/strahovanie/stroitelnyh-riskov/">Страхование строительных рисков</a></li>
+
+
+
+                                <li><a href="http://1076829.forcecrm.web.hosting-test.net/ru/strahovanie/transporta/">Страхование транспорта</a></li>
+
+
+
+                                <!-- <li><a href="http://1076829.forcecrm.web.hosting-test.net/ru/strahovanie/vozdushnogo-transporta">Страхование воздушного транспорта</a></li>
+							
+			
+					
+													<li><a href="http://1076829.forcecrm.web.hosting-test.net/ru/strahovanie/vodnogo-transporta">Страхование водного транспорта</a></li> -->
+
+
+
+                                <li><a href="http://1076829.forcecrm.web.hosting-test.net/ru/strahovanie/bankovskoe/">Банковское страхование</a></li>
+
+
+
+                                <li><a href="/ru/strahovanie/neftjanoe/">Нефтяное страхование</a></li>
+
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+
+                    <li>
+                        <a href="#">О компании<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                        <div class="mp-level">
+                            <a href="/ru/company/">
+                                <h2>
+                                    О компании <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                </h2>
+                            </a>
+                            <ul>
+
+
+
+
+                                <li>
+                                    <a href="#">О компании Standard<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                                    <div class="mp-level">
+                                        <a href="/ru/company/about/">
+                                            <h2>
+                                                О компании Standard <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                            </h2>
+                                        </a>
+                                        <ul>
+
+
+
+
+                                            <li><a href="/ru/company/about/mission/">Миссия</a></li>
+
+
+
+                                            <li><a href="/ru/company/about/requisites/">Реквизиты</a></li>
+
+
+
+                                            <li><a href="/ru/company/about/partners and clients/">Партнеры и клиенты</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="/ru/company/management/">Руководство</a></li>
+
+
+
+                                <li><a href="/ru/company/branches/">Офисы</a></li>
+
+
+
+                                <li><a href="/ru/company/documents/">Документы</a></li>
+
+
+
+                                <li><a href="/ru/company/news/">Новости компании</a></li>
+
+
+
+                                <li><a href="/ru/company/pressroom/">Пресс центр</a></li>
+
+
+
+                                <li><a href="/ru/company/career/">Карьера в компании</a></li>
+
+
+
+                                <li><a href="/ru/company/corporate-events/">Корпоративные события</a></li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="/ru/action/">Акции</a></li>
+
+
+
+                    <li><a href="/ru/accident/">Страховой случай</a></li>
+
+
+
+                    <li><a href="/ru/loyalty/">Карта лояльности</a></li>
+
+
+
+
+                </ul>
+            </div>
+
+            <div class="mp-level mobile menu">
+                <div class="right-shadow"></div>
+                <h2>
+                    &nbsp;
+                    <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                </h2>
+                <ul>
+
+
+                    <li>
+                        <a href="#">О компании<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                        <div class="mp-level">
+                            <a href="/ru/company/">
+                                <h2>
+                                    О компании <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                </h2>
+                            </a>
+                            <ul>
+
+
+
+
+                                <li>
+                                    <a href="#">О компании Standard<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                                    <div class="mp-level">
+                                        <a href="/ru/company/about/">
+                                            <h2>
+                                                О компании Standard <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                            </h2>
+                                        </a>
+                                        <ul>
+
+
+
+
+                                            <li><a href="/ru/company/about/mission/">Миссия</a></li>
+
+
+
+                                            <li><a href="/ru/company/about/requisites/">Реквизиты</a></li>
+
+
+
+                                            <li><a href="/ru/company/about/partners and clients/">Партнеры и клиенты</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="/ru/company/management/">Руководство</a></li>
+
+
+
+                                <li><a href="/ru/company/branches/">Офисы</a></li>
+
+
+
+                                <li><a href="/ru/company/documents/">Документы</a></li>
+
+
+
+                                <li><a href="/ru/company/news/">Новости компании</a></li>
+
+
+
+                                <li><a href="/ru/company/pressroom/">Пресс центр</a></li>
+
+
+
+                                <li><a href="/ru/company/career/">Карьера в компании</a></li>
+
+
+
+                                <li><a href="/ru/company/corporate-events/">Корпоративные события</a></li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="/ru/action/">Акции</a></li>
+
+
+
+                    <li><a href="/ru/accident/">Страховой случай</a></li>
+
+
+
+                    <li><a href="/ru/loyalty/">Карта лояльности</a></li>
+
+
+
+                    <li>
+                        <a href="#">Физическим лицам<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                        <div class="mp-level">
+                            <a href="/ru/strahovanie/">
+                                <h2>
+                                    Физическим лицам <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                </h2>
+                            </a>
+                            <ul>
+
+
+
+
+                                <li>
+                                    <a href="#">Страхование путешествий<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                                    <div class="mp-level">
+                                        <a href="/ru/strahovanie/strahovanie-pytishestviy">
+                                            <h2>
+                                                Страхование путешествий <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                            </h2>
+                                        </a>
+                                        <ul>
+
+
+
+
+                                            <li><a href="/ru/strahovanie/turisticheskoe-strahovanie">Туристическое страхование</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/strahovanie-dlya-shengen-visu">Страхование длч шенгенской визы</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Страхование недвижимости<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                                    <div class="mp-level">
+                                        <a href="/ru/strahovanie/strahovanie-nedvigimosti">
+                                            <h2>
+                                                Страхование недвижимости <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                            </h2>
+                                        </a>
+                                        <ul>
+
+
+
+
+                                            <li><a href="/ru/strahovanie/strahovanie-remonta">Страхование ремонта</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/strahovanie-kvartiru">Страхование квартиры</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/strahovanie-doma">Страхование дома</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/strahovanie-zemli">Страхование земли</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Автострахование<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                                    <div class="mp-level">
+                                        <a href="/ru/strahovanie/avtostahovanie">
+                                            <h2>
+                                                Автострахование <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                            </h2>
+                                        </a>
+                                        <ul>
+
+
+
+
+                                            <li><a href="/ru/strahovanie/ogpo">ОГПО</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/kasko">КАСКО</a></li>
+
+
+
+                                            <li><a href="/ru/strahovanie/srtahovanie-spectehniki">Страхование спецтехники</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Страхование здоровья<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                                    <div class="mp-level">
+                                        <a href="/ru/strahovanie/medicinskoe-strahovanie">
+                                            <h2>
+                                                Страхование здоровья <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                            </h2>
+                                        </a>
+                                        <ul>
+
+
+
+
+                                            <li><a href="/ru/strahovanie/strahovanie-detej">Страхование для детей</a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Юридическим лицам<svg class="icon icon-go"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-go"></use></svg></a>
+                        <div class="mp-level">
+                            <a href="/ru/strahovanie">
+                                <h2>
+                                    Юридическим лицам <svg class="icon icon-back-menu"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-back-menu"></use></svg>
+                                </h2>
+                            </a>
+                            <ul>
+
+
+
+
+                                <li><a href="/ru/strahovanie/oyazatelnoe-strahovanie">Обязятельное страхование</a></li>
+
+
+
+                                <li><a href="/ru/strahovanie/strahovanie-rabotnikov">Страхование работников</a></li>
+
+
+
+                                <li><a href="/ru/strahovanie/strahovanie-otvestvenosti">Страхование ответственности</a></li>
+
+
+
+                                <li><a href="/ru/strahovanie/strahovanie-imushestva">Страхование имущества</a></li>
+
+
+
+                                <li><a href="/ru/strahovanie/kargo">Карго</a></li>
+
+
+
+                                <li><a href="http://1076829.forcecrm.web.hosting-test.net/ru/strahovanie/strahovanie-stroi-riskov">Страхование строительных рисков</a></li>
+
+
+
+                                <li><a href="http://1076829.forcecrm.web.hosting-test.net/ru/strahovanie/strahovanie-avtotransporta">Страхование автотранспорта</a></li>
+
+
+
+                                <li><a href="http://1076829.forcecrm.web.hosting-test.net/ru/strahovanie/strahovanie-vod-transporta">Страхование воздушного транспорта</a></li>
+
+
+
+                                <li><a href="http://1076829.forcecrm.web.hosting-test.net/ru/strahovanie/strahovanie-vod-transporta">Страхование водного транспорта</a></li>
+
+
+
+                                <li><a href="http://1076829.forcecrm.web.hosting-test.net/ru/strahovanie/bankovskoe-strahovanie">Банковское страхование</a></li>
+
+
+
+                                <li><a href="/ru/strahovanie/neftyznie-strahovanie">Нефтяное страхование</a></li>
+
+
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <header class="header container-fluid">
+            <a class="menu-button pull-left" href="#" id="menu-btn">
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+            <a class="logo pull-left" href="/ru/">
+                <img src="/bitrix/templates/stdi/img/logo.svg" />
+            </a>
+            <div class="pull-right header-buttons no-mobile">
+                <a href="/ru/help/" class="btn btn-lg btn-primary btn-warning btn-shadow">
+                    <svg class="icon icon-24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-24"></use></svg> Нужна помощь? </a>
+                <a href="/ru/help/" class="btn btn-lg btn-circle mobile">
+                    <svg class="icon icon-24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-24"></use></svg>
+                </a>
+                <a href="/ru/auth/" class="btn btn-lg btn-circle">
+                    <svg class="icon icon-profile"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-profile"></use></svg>
+                </a>
+
+
+
+
+
+                <div class="b-langs btn btn-lg btn-circle" data-lang="ru">
+                    <svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-ru"></use></svg>
+                    <div class="popover fade bottom in">
+                        <div class="arrow" style="left: 50%;"></div>
+                        <!--                    <h3 class="popover-title" style="display: none;"></h3>-->
+                        <div class="popover-content">
+                            <ul class="dropdown-menu">
+                                <li><a href="/kz/strahovanie/"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-kk"></use></svg></a></li>
+                                <li><a href="/en/strahovanie/"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-en"></use></svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="/ru/search/" class="btn btn-lg btn-circle">
+                    <svg class="icon icon-search"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-search"></use></svg>
+                </a>
+            </div>
+
+            <div class="pull-right header-buttons mobile">
+                <a href="/ru/auth/" class="btn btn-lg btn-circle">
+                    <img src="/bitrix/templates/stdi/img/logo-user.png">
+                </a>
+
+                <a href="tel:7090" class="btn btn-lg btn-circle">
+                    <img src="/bitrix/templates/stdi/img/logo-phone.png">
+                </a>
+            </div>
+            <svg class="icon icon-slogan tagline pull-left tagline-ru"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-slogan-ru"></use></svg>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="site-content">
+                <div class="container">
+
+
+                    <ul class="breadcrumb ">
+                        <li><a href="/ru/" title="Главная">Главная</a></li>
+                        <li><a href="/strahovanie/" title="Страхование">Страхование</a></li>
+                    </ul>
+                </div>
+                <div class="container">
+
+                    <div class="row no-mobile">
+                        <h1 class="no-mobile">Страхование</h1>
+                        <div class="col-sm-6">
+                            <h3>Физическим лицам</h3>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/avto/">Автострахование</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/ogpo/">ОГПО</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/kasko/">Каско</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/spectehniki/">Страхование спец техники</a></li>
+
+                            </ul>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/zdorovja/">Страхование здоровья</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/detej/">Страхование детей</a></li>
+
+                            </ul>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/puteshestvij/">Страхование путешествия</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/turisticheskoe/">Туристическое страхование</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/dlja-shengenskoj-vizy/">Страхования для шенгенской визы</a></li>
+
+                            </ul>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/nedvizhimosti/">Страхование недвижимости</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/remonta/">Страхование ремонта</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/kvartiry/">Страхование квартиры</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/doma/">Страхование дома</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/zemli/">Страхование земли</a></li>
+
+                            </ul>
+
+                        </div>
+                        <div class=" col-sm-6">
+
+                            <h3>Юридическим лицам</h3>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/objazatelnoe/">Обязательное страхование</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/rabotnikov/">Страхование работников</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/otvetstvennosti/">Страхование отвествености</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/imushhestva/">Страхование имущества</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/tovara/">Страхование товара</a></li>
+
+                            </ul>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/kargo/">Карго</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/stroitelnyh-riskov/">Страхование строительных рисков</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/bankovskoe/">Банковское страхование</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/neftjanoe/">Нефтяное страхование</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/transporta/">Транспорта</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/avtotransporta/">Страхование автотранспорта</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/vozdushnogo-transporta/">Страхование воздушного транспорта</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/vodnogo-transporta/">Страхование водного транспорта</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/zheleznodorozhnoye/">Страхование железнодорожного транспорта</a></li>
+
+                            </ul>
+                            <br><br><br>
+                        </div>
+                        <br><br><br>
+                    </div>
+                    <div class="row mobile">
+                        <h1>Страхование</h1>
+                        <div class="col-xs-12 ">
+                            <h3>Физическим лицам</h3>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/avto/">Автострахование</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/ogpo/">ОГПО</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/kasko/">Каско</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/spectehniki/">Страхование спец техники</a></li>
+
+                            </ul>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/zdorovja/">Страхование здоровья</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/detej/">Страхование детей</a></li>
+
+                            </ul>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/puteshestvij/">Страхование путешествия</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/turisticheskoe/">Туристическое страхование</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/dlja-shengenskoj-vizy/">Страхования для шенгенской визы</a></li>
+
+                            </ul>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/nedvizhimosti/">Страхование недвижимости</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/remonta/">Страхование ремонта</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/kvartiry/">Страхование квартиры</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/doma/">Страхование дома</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/zemli/">Страхование земли</a></li>
+
+                            </ul>
+
+                        </div>
+                        <div class="col-xs-12 ">
+
+                            <h3>Юридическим лицам</h3>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/objazatelnoe/">Обязательное страхование</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/rabotnikov/">Страхование работников</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/otvetstvennosti/">Страхование отвествености</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/imushhestva/">Страхование имущества</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/tovara/">Страхование товара</a></li>
+
+                            </ul>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/kargo/">Карго</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/stroitelnyh-riskov/">Страхование строительных рисков</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/bankovskoe/">Банковское страхование</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/neftjanoe/">Нефтяное страхование</a></h5>
+                            <h5><a style="color:black;text-decoration:none;" href="/strahovanie/transporta/">Транспорта</a></h5>
+                            <ul>
+                                <li><a href="/strahovanie/avtotransporta/">Страхование автотранспорта</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/vozdushnogo-transporta/">Страхование воздушного транспорта</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/vodnogo-transporta/">Страхование водного транспорта</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="/strahovanie/zheleznodorozhnoye/">Страхование железнодорожного транспорта</a></li>
+
+                            </ul>
+                            <br><br><br>
+                        </div>
+
+                        <br><br><br>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-3 col-1 no-mobile">
+                                <h4>Компания</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="/ru/company/about/">О компании</a></li>
+                                    <li><a href="/ru/company/management/">Руководство</a></li>
+                                    <li><a href="/ru/company/documents/">Документы</a></li>
+                                    <li><a href="/ru/company/career/">Карьера в компании</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-3 col-2 no-mobile">
+                                <h4>Страхование</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="/ru/help/">Произошел страховой случай</a></li>
+                                    <li><a href="/ru/loyalty/">Карта лояльности</a></li>
+                                    <li><a href="/ru/tips/">Полезные советы</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-3 col-3 no-mobile">
+                                <h4>Обратная связь</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="/ru/company/about/requisites/">Реквизиты</a></li>
+                                    <li><a href="/ru/company/branches/">Филиалы</a></li>
+                                </ul>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/stdikz" target="_blank"><svg class="icon icon-fb"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-fb"></use></svg></a>
+                                    <a href="https://twitter.com/Standard_kz" target="_blank"><svg class="icon icon-tw"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-tw"></use></svg></a>
+                                    <a href="https://new.vk.com/stdikz" target="_blank"><svg class="icon icon-vk"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-vk"></use></svg></a>
+                                    <a href="https://www.instagram.com/stdikz/" target="_blank"><svg class="icon icon-inst"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-inst"></use></svg></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mobile center m-b-20">
+                                <div class="phone text-center btn-help">
+                                    <a href="/ru/help">Помощь</a>
+                                </div>
+                                <p class="m-b-20 feedback">Обратная связь</p>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/stdikz" target="_blank"><svg class="icon icon-fb"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-fb"></use></svg></a>
+                                    <a href="https://twitter.com/Standard_kz" target="_blank"><svg class="icon icon-tw"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-tw"></use></svg></a>
+                                    <a href="https://new.vk.com/stdikz" target="_blank"><svg class="icon icon-vk"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-vk"></use></svg></a>
+                                    <a href="https://www.instagram.com/stdikz/" target="_blank"><svg class="icon icon-inst"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-inst"></use></svg></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-3 col-4 no-mobile center">
+                                <div class="phone">
+                                    (2) 58-70-90
+                                    <svg class="icon icon-24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-24"></use></svg>
+                                </div>
+                                <p class="phone-text">Единый номер для всех городов</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 mobile center">
+                            <div class="phone text-center">
+                                <a href="tel:7090">7090</a>
+                            </div>
+                            <p class="phone-text">Звонок бесплатный для всех операторов</p>
+                            <div class="phone">
+                                <a href="tel:87272587090">(2) 58-70-90</a>
+                                <svg class="icon icon-24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/bitrix/templates/stdi/img/icons.svg#icon-24"></use></svg>
+                            </div>
+                            <p class="phone-text">Единый номер для всех городов</p>
+
+
+
+                        </div>
+                        <div class="copyright no-mobile">© 2017 АО "Страховая Компания "Standard"</div>
+                    </div>
+                    <div class="col-12 mobile center full-version-click" onclick="goToFullSite()">
+                    </div>
+                    <div id="show-mobile" class="col-12 no-mobile text-center full-version-click" onclick="goToMobileSite()">
+                    </div>
+            </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Yandex.Metrika counter -->
+<!--
+    <script type="text/javascript">
+        (function(d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter25709912 = new Ya.Metrika({
+                        id: 25709912,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true,
+                        trackHash: true
+                    });
+                } catch (e) {}
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function() {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/25709912" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+-->
+    <!-- /Yandex.Metrika counter -->
+
+
+    <script src="/bitrix/templates/stdi/js/vendor-85ca8a3c77.js"></script>
+
+    <script src="/bitrix/templates/stdi/js/app-1f96b90f55.js"></script>
+
+
+    <script src="/bitrix/templates/stdi/js/auth-8ae3a80190.js"></script>
+    <script src="/bitrix/templates/stdi/js/custom.js"></script>
+    <!-- <script type='text/javascript'>
+(function(){ var widget_id = 'zxjXq6ltt5';var d=document;var w=window;function l(){
+  // if(!localStorage.getItem("pageType") || localStorage.getItem("pageType"))
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script> -->
+    <script type="text/javascript">
+        function goToFullSite() {
+            $('body').addClass('full');
+            $('body').removeClass('mobile');
+            localStorage.setItem("pageType", "full");
+            $('#show-mobile').show();
+            var widget_id = 'zxjXq6ltt5';
+            var d = document;
+            var w = window;
+
+            function l() {
+                // if(!localStorage.getItem("pageType") || localStorage.getItem("pageType"))
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//code.jivosite.com/script/widget/' + widget_id;
+                var ss = document.getElementsByTagName('script')[0];
+                ss.parentNode.insertBefore(s, ss);
+            }
+            if (d.readyState == 'complete') {
+                l();
+            } else {
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        }
+
+        function goToMobileSite() {
+            $('body').addClass('mobile');
+            $('body').removeClass('full');
+            localStorage.setItem("pageType", "mobile");
+            $('#show-mobile').hide();
+            window.location = "/";
+            location.reload();
+        }
+
+        function detectmob() {
+            if (navigator.userAgent.match(/Android/i) ||
+                navigator.userAgent.match(/webOS/i) ||
+                navigator.userAgent.match(/iPhone/i) ||
+                navigator.userAgent.match(/iPad/i) ||
+                navigator.userAgent.match(/iPod/i) ||
+                navigator.userAgent.match(/BlackBerry/i) ||
+                navigator.userAgent.match(/Windows Phone/i)
+            ) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        $(document).ready(function() {
+            var type = localStorage.getItem("pageType");
+            if (type && type != null) {
+                if (type == "mobile") {
+                    $('body').addClass('mobile');
+                    $('body').removeClass('full');
+                } else if (type == "full") {
+                    $('body').addClass('full');
+                    $('body').removeClass('mobile');
+                }
+            } else {
+                if (detectmob()) {
+                    $('body').addClass('mobile');
+                    $('body').removeClass('full');
+                    localStorage.setItem("pageType", "mobile");
+                    $('#show-mobile').hide();
+                } else {
+                    $('body').addClass('full');
+                    $('body').removeClass('mobile');
+                    localStorage.setItem("pageType", "full");
+                    $('#show-mobile').show();
+                }
+            }
+            if (detectmob() && type == "full") {
+                $('#show-mobile').show();
+            } else {
+                $('#show-mobile').hide();
+            }
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        function goToFullSite() {
+            $('body').addClass('full');
+            $('body').removeClass('mobile');
+            localStorage.setItem("pageType", "full");
+            $('#show-mobile').show();
+            var widget_id = 'zxjXq6ltt5';
+            var d = document;
+            var w = window;
+
+            function l() {
+                // if(!localStorage.getItem("pageType") || localStorage.getItem("pageType"))
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//code.jivosite.com/script/widget/' + widget_id;
+                var ss = document.getElementsByTagName('script')[0];
+                ss.parentNode.insertBefore(s, ss);
+            }
+            if (d.readyState == 'complete') {
+                l();
+            } else {
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        }
+
+        function goToMobileSite() {
+            $('body').addClass('mobile');
+            $('body').removeClass('full');
+            localStorage.setItem("pageType", "mobile");
+            $('#show-mobile').hide();
+            window.location = "/";
+            location.reload();
+        }
+
+        function detectmob() {
+            if (navigator.userAgent.match(/Android/i) ||
+                navigator.userAgent.match(/webOS/i) ||
+                navigator.userAgent.match(/iPhone/i) ||
+                navigator.userAgent.match(/iPad/i) ||
+                navigator.userAgent.match(/iPod/i) ||
+                navigator.userAgent.match(/BlackBerry/i) ||
+                navigator.userAgent.match(/Windows Phone/i)
+            ) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        $(document).ready(function() {
+            var type = localStorage.getItem("pageType");
+            if (type && type != null) {
+                if (type == "mobile") {
+                    $('body').addClass('mobile');
+                    $('body').removeClass('full');
+                } else if (type == "full") {
+                    $('body').addClass('full');
+                    $('body').removeClass('mobile');
+                }
+            } else {
+                if (detectmob()) {
+                    $('body').addClass('mobile');
+                    $('body').removeClass('full');
+                    localStorage.setItem("pageType", "mobile");
+                    $('#show-mobile').hide();
+                } else {
+                    $('body').addClass('full');
+                    $('body').removeClass('mobile');
+                    localStorage.setItem("pageType", "full");
+                    $('#show-mobile').show();
+                }
+            }
+            if (detectmob() && type == "full") {
+                $('#show-mobile').show();
+            } else {
+                $('#show-mobile').hide();
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>
